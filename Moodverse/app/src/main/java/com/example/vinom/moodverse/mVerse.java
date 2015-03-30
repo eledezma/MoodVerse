@@ -121,11 +121,11 @@ public class mVerse extends ActionBarActivity {
                 JSONArray jArray = jObject.getJSONArray("results");
 //                for(int i=0; i < jArray.length(); i++) {
 
-                
+
                 JSONObject Jason = jArray.getJSONObject(0);
 
 
-                    String passageString = Jason.getString("preview");
+                    String passageString = Jason.getString("title");
                     String verseString = Jason.getString("preview");
 
                 TextView passageT = (TextView) findViewById(R.id.passage);
